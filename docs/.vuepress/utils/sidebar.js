@@ -8,11 +8,12 @@ import matter from 'gray-matter';
  * @returns 
  */
 const restructureMatter = (matter) => {
-  const { fileName, depth, title, type, order } = matter
+  const { fileName = '', depth = 1, title = '', type = '', order = 99 } = matter
   const newOne = {
+    ...matter,
     text: title,
-    link: `/${type}/${fileName}`,
     order,
+    link: `/${type}/${fileName}`,
     children: [],
   }
 
@@ -84,7 +85,7 @@ export const makeTreeItem = (baseDir, fileNames) => {
       const content = fs.readFileSync(fullPath, 'utf-8');
       const { data } = matter(content);
   
-      if (data.sidebar === false) return;
+      if (data.removeFromSidebar) return;
   
       groups.push({ fileName, ...data });
     });

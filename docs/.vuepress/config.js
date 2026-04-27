@@ -6,6 +6,8 @@ import { generateSidebar } from './plugins/sidebarMaker.js';
 export default defineUserConfig({
   base: '/portfolio/',
   bundler: viteBundler(),
+  title: 'Portfolio',
+  lang: 'ko',
   theme: defaultTheme({
     sidebar: generateSidebar(),
   }),
