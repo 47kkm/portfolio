@@ -2,7 +2,7 @@
 type: projects
 depth: 2
 title: project1
-description: project1
+description: ifkakao
 order: 1
 ---
 
