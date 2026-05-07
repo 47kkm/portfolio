@@ -10,5 +10,7 @@ export default defineUserConfig({
   lang: 'ko',
   theme: defaultTheme({
     sidebar: generateSidebar(),
+    lastUpdated: false,
+    contributors: false,
   }),
 })
