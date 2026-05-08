@@ -28,7 +28,7 @@ order: 5
 
 ## 문제 및 해결
 - **proxy설정**
-  - <Badge type="danger" text="문제" vertical="middle" />: 기존 nuxt2 에서는 axios 를 활용하여 proxy 설정 및 api 호출을 진행했으나, nuxt3 에서는 axios 를 사용하기엔 무리가 있는 구조였다.
+  - <Badge type="danger" text="문제" vertical="middle" />: 기존 nuxt2 에서는 axios 를 활용하여 proxy 설정 및 api 호출을 진행했으나, nuxt3 에서는 axios가 권장 방식이 아니었기 때문에 사용에 문제가 있었다.
   - <Badge type="tip" text="해결" vertical="middle" />: 개발환경에서는 dev proxy 를 사용하여 api 를 호출하는데 이슈가 없었으나, prod 환경에서는 이가 작동하지 않았고, 당시 nuxt3 에 대한 문서 및 커뮤니티가 부족하여 해결에 소요시간이 오래 걸렸다. 결과적으로는 `nitro routeRules` 설정을 이용하여 해결하였다.
 - **multipart/form-data 전송 이슈**
   - <Badge type="danger" text="문제" vertical="middle" />: `routeRules` 설정으로 prod 환경에서도 모든 api 가 잘 작동했으나, `multipart/form-data`를 전송했을때 파일이 정상적으로 전송되지 않고 깨지는 이슈가 있었다.
