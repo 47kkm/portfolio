@@ -21,7 +21,7 @@ export const highlightList = [
 
 export const techStack = [
   { title: 'Language', list: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript'] },
-  { title: 'Framework', list: ['Vue', 'Nuxt', 'VuePress', 'React'] },
+  { title: 'Framework', list: ['Vue', 'Nuxt', 'VuePress'] },
   { title: 'Tools', list: ['Vuex', 'Pinia', 'WXT', 'Jest', 'MSW', 'Docker'] },
 ];
 
