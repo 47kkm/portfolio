@@ -5,7 +5,8 @@ title: 카카오모빌리티 디벨로퍼스
 description: 카카오모빌리티 기술 및 제품 페이지
 category: 서비스
 stack: [Nuxt2, VuePress, reCAPTCHA]
-order: 4
+period: '2022.04'
+order: 11
 ---
 
 # 카카오모빌리티 디벨로퍼스

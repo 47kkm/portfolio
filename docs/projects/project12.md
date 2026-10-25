@@ -5,7 +5,8 @@ title: Nuxt3 보일러플레이트
 description: 사내 Nuxt3 보일러플레이트 제작
 category: 사내 도구
 stack: [Nuxt3, ESLint, Prettier, Docker]
-order: 12
+period: '2024.04'
+order: 5
 ---
 
 # 사내 Nuxt3 보일러플레이트 제작

@@ -5,7 +5,8 @@ title: 팝업 레이어 모듈
 description: nuxt/kit를 이용한 팝업 레이어 모듈 제작
 category: 사내 도구
 stack: [Nuxt3, nuxt/kit]
-order: 11
+period: '2025.05'
+order: 2
 ---
 
 # nuxt/kit를 이용한 팝업 레이어 공통 모듈 제작

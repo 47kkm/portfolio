@@ -171,10 +171,16 @@ const filteredList = computed(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  > .txt_category {
+    flex-shrink: 0;
+  }
 }
 .txt_period {
   font-size: 0.8125rem;
   color: var(--vp-c-text-subtle);
+  text-align: right;
+  text-wrap: balance;
 }
 .tit_project {
   display: block;

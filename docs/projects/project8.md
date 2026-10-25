@@ -5,7 +5,8 @@ title: kakao 전지적친구시점
 description: 친구에게 캐릭터 만들어주기 프로모션
 category: 프로모션
 stack: [Nuxt3, Canvas, Lottie, MSW]
-order: 8
+period: 2024.09 ~ 2024.10
+order: 3
 ---
 
 # 카카오 전지적친구시점 프로모션

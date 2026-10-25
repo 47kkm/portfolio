@@ -5,7 +5,8 @@ title: 카카오 karlo 프로모션
 description: AI를 이용한 이미지 생성 프로모션
 category: 프로모션
 stack: [Nuxt3, TypeScript, Pinia]
-order: 5
+period: '2023.05'
+order: 9
 ---
 
 # 카카오 karlo 프로모션

@@ -5,7 +5,8 @@ title: Nuxt2 컴포넌트
 description: 사내 Nuxt2 컴포넌트 가이드 페이지 제작
 category: 사내 도구
 stack: [Nuxt2, MDX]
-order: 9
+period: 2024.02 ~ 2025.07
+order: 7
 ---
 
 # 사내 Nuxt2 컴포넌트 가이드 페이지 제작

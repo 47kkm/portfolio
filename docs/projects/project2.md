@@ -5,7 +5,8 @@ title: 카카오 IR 미팅 예약 시스템
 description: 카카오 IR 미팅 예약 및 관리를 위한 페이지
 category: 서비스
 stack: [Nuxt2, FullCalendar]
-order: 2
+period: 2021.06 ~ 2021.08
+order: 12
 ---
 
 # 카카오 IR 미팅 예약 시스템

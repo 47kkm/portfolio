@@ -5,7 +5,8 @@ title: Useragent 모듈
 description: 바닐라 스크립트를 이용한 Useragent 모듈 개발
 category: 사내 도구
 stack: [JavaScript, nuxtjs/device]
-order: 10
+period: '2024.08'
+order: 4
 ---
 
 # Useragent 모듈 개발

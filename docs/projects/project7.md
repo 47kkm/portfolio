@@ -5,7 +5,8 @@ title: 테크카카오
 description: 카카오 기술블로그 페이지
 category: 서비스
 stack: [Nuxt3, Markdown Editor, LaTeX]
-order: 7
+period: '2024.04'
+order: 6
 ---
 
 # 테크카카오

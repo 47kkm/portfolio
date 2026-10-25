@@ -5,7 +5,8 @@ title: 카카오엔터테인먼트 오디션
 description: 카카오엔터테인먼트 오디션 안내 및 지원 페이지
 category: 서비스
 stack: [Nuxt2, i18n, AWS]
-order: 3
+period: '2022.05'
+order: 10
 ---
 
 # 카카오엔터테인먼트 오디션

@@ -5,6 +5,7 @@ title: ifkakao
 description: ifkakao 개발자 컨퍼런스 페이지
 category: 서비스
 stack: [Nuxt2, Nuxt3, Jest]
+period: 2020.10 ~ 2020.11 · 2025.05 ~ 2025.06
 order: 1
 ---
 
@@ -15,6 +16,7 @@ order: 1
 
 ## 프로젝트 정보
 - [ifkakao](https://if.kakao.com/2020)
+- 기간: 2020.10 ~ 2020.11
 - 2020년도에 제공한 메인, join, mypage 등 주요 페이지 종료
 
 ## 기술 스택
@@ -48,6 +50,7 @@ order: 1
 
 ## 프로젝트 정보
 - [ifkakao](https://if.kakao.com)
+- 기간: 2025.05 ~ 2025.06
 
 ## 기술 스택
 - UI: HTML, SCSS

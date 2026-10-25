@@ -5,7 +5,8 @@ title: 레디엔터테인먼트
 description: 모델 및 프로젝트 관리를 위한 페이지
 category: 서비스
 stack: [Vue3, Atomic Design]
-order: 6
+period: 2023.06 ~ 2024.03
+order: 8
 ---
 
 # 레디엔터테인먼트 모델, 프로젝트 관리 시스템
