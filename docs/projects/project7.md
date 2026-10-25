@@ -28,7 +28,7 @@ order: 7
 
 ## 문제 및 해결
 - **youtube embed 렌더링 문제**
-  - <Badge type="danger" text="문제" vertical="middle" />: `iframe` 으로 삽입되는 youtube 특성 상 에디터에서 html 파싱 후 api 를 통해 데이터가 전달될때 서버의 XXS 대비로 해당 태그 필터링되는 이슈가 발생하였다.
+  - <Badge type="danger" text="문제" vertical="middle" />: `iframe` 으로 삽입되는 youtube 특성 상 에디터에서 html 파싱 후 api 를 통해 데이터가 전달될때 서버의 XSS 대비로 해당 태그 필터링되는 이슈가 발생하였다.
   - <Badge type="tip" text="해결" vertical="middle" />: 에디터 내에서 html 로 파싱될 때 youtube iframe 에 대하여 이를 판별할 수 있는 플래그를 삽입하도록 조치하고, 백엔드 api 를 통해 전달 될 때 해당 태그의 경우 필터링 되지 않도록 협의하여 처리하였다.
 - **api 호출 문제**
   - <Badge type="danger" text="문제" vertical="middle" />: 백엔드와의 협의 후 prod 환경에서 api와 도메인을 맞추어 호출하는 방식으로 개발하기로 하였기 때문에 dev proxy 만을 고려하여 개발 진행하였으나, 추후 도메인이 변경되는 등의 이슈가 있어서 cors 에러 발생하였다.
