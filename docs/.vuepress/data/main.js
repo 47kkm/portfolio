@@ -61,6 +61,7 @@ export const careerList = [
     historyList: [
       { year: '2019', text: 'UI 개발자로 입사, 다음(Daum) 통합 검색 개편 프로젝트 참여' },
       { year: '2020', text: '팀 Nuxt 도입과 함께 ifkakao 2020 프론트 메인 개발' },
+      { year: '2022', text: '카카오 계열사 기업 사이트·브랜드 페이지 운영, 타 프로젝트 백업 지원' },
       { year: '이후', text: 'Nuxt3 도입·마이그레이션, 사내 보일러플레이트와 공통 모듈 제작' },
     ],
   },
