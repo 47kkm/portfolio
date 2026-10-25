@@ -2,7 +2,9 @@
 type: projects
 depth: 2
 title: 테크카카오
-description: 테크카카오
+description: 카카오 기술블로그 페이지
+category: 서비스
+stack: [Nuxt3, Markdown Editor, LaTeX]
 order: 7
 ---
 
@@ -28,12 +30,12 @@ order: 7
 
 ## 문제 및 해결
 - **youtube embed 렌더링 문제**
-  - <Badge type="danger" text="문제" vertical="middle" />: `iframe` 으로 삽입되는 youtube 특성 상 에디터에서 html 파싱 후 api 를 통해 데이터가 전달될때 서버의 XSS 대비로 해당 태그 필터링되는 이슈가 발생하였다.
-  - <Badge type="tip" text="해결" vertical="middle" />: 에디터 내에서 html 로 파싱될 때 youtube iframe 에 대하여 이를 판별할 수 있는 플래그를 삽입하도록 조치하고, 백엔드 api 를 통해 전달 될 때 해당 태그의 경우 필터링 되지 않도록 협의하여 처리하였다.
+  - <Badge type="danger" text="문제" vertical="middle" /> `iframe` 으로 삽입되는 youtube 특성 상 에디터에서 html 파싱 후 api 를 통해 데이터가 전달될때 서버의 XSS 대비로 해당 태그 필터링되는 이슈가 발생하였다.
+  - <Badge type="tip" text="해결" vertical="middle" /> 에디터 내에서 html 로 파싱될 때 youtube iframe 에 대하여 이를 판별할 수 있는 플래그를 삽입하도록 조치하고, 백엔드 api 를 통해 전달 될 때 해당 태그의 경우 필터링 되지 않도록 협의하여 처리하였다.
 - **api 호출 문제**
-  - <Badge type="danger" text="문제" vertical="middle" />: 백엔드와의 협의 후 prod 환경에서 api와 도메인을 맞추어 호출하는 방식으로 개발하기로 하였기 때문에 dev proxy 만을 고려하여 개발 진행하였으나, 추후 도메인이 변경되는 등의 이슈가 있어서 cors 에러 발생하였다.
-  - <Badge type="tip" text="해결" vertical="middle" />: 이미 개발 구조를 맞추어 놓은 상태라, 도메인 변경에 따라 프론트 쪽에서도 모든 도메인 설정 부분을 그에 맞춰 수동으로 수정하였다.
-  - <Badge type="info" text="개선" vertical="middle" />: 도메인 변경 문제는 언제든 발생할 수 있는 문제이기 때문에 사전 예방이 필요하며, proxy 의 적극 활용과 다양한 개발 및 서비스 환경에서의 테스트가 필요하다.
+  - <Badge type="danger" text="문제" vertical="middle" /> 백엔드와의 협의 후 prod 환경에서 api와 도메인을 맞추어 호출하는 방식으로 개발하기로 하였기 때문에 dev proxy 만을 고려하여 개발 진행하였으나, 추후 도메인이 변경되는 등의 이슈가 있어서 cors 에러 발생하였다.
+  - <Badge type="tip" text="해결" vertical="middle" /> 이미 개발 구조를 맞추어 놓은 상태라, 도메인 변경에 따라 프론트 쪽에서도 모든 도메인 설정 부분을 그에 맞춰 수동으로 수정하였다.
+  - <Badge type="info" text="개선" vertical="middle" /> 도메인 변경 문제는 언제든 발생할 수 있는 문제이기 때문에 사전 예방이 필요하며, proxy 의 적극 활용과 다양한 개발 및 서비스 환경에서의 테스트가 필요하다.
 
 ## 성과
 - 페이지 개발을 직접 진행하지 않고, 선임 개발자로 프로젝트 일정, 리소스 관리 및 코드리뷰 진행

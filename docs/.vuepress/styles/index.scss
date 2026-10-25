@@ -23,14 +23,19 @@ ul {
 .link_comm {
   display: inline-block;
   padding: 10px 20px;
+  border: 1px solid var(--vp-c-accent);
   border-radius: 12px;
-  color: #fff;
-  background: #299764;
+  color: var(--vp-c-accent-text);
+  font-weight: 600;
+  background: var(--vp-c-accent);
   text-decoration: none !important;
   vertical-align: top;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.85;
+  }
   &.type_line {
-    border: 1px solid #299764;
-    color: #299764;
+    color: var(--vp-c-accent);
     background: none;
   }
 }
@@ -38,4 +43,101 @@ ul {
 .area_link {
   margin-top: 60px;
   text-align: center;
+}
+
+// 메인
+.page_home {
+  --content-width: 1040px;
+}
+
+[vp-content] .tit_section {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.panel_section {
+  margin-top: 72px;
+  scroll-margin-top: calc(var(--navbar-height) + 16px);
+}
+
+// 프로젝트 상세
+[vp-content] {
+  h2[id^='프로젝트-개요'] + p {
+    padding: 18px 22px;
+    border-left: 4px solid var(--vp-c-accent);
+    border-radius: 4px 12px 12px 4px;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    background: var(--vp-c-accent-soft);
+  }
+
+  h2[id^='문제-및-해결'] + ul {
+    padding-inline-start: 0;
+    list-style: none;
+    > li {
+      padding: 20px 24px;
+      border: 1px solid var(--vp-c-divider);
+      border-radius: 14px;
+      background: var(--vp-c-bg-alt);
+      + li {
+        margin-top: 16px;
+      }
+      > strong {
+        display: block;
+        font-size: 1.0625rem;
+      }
+      > ul {
+        margin-top: 14px;
+        padding-inline-start: 0;
+        list-style: none;
+        > li {
+          position: relative;
+          padding-left: 3.5rem;
+          line-height: 1.7;
+          // 같은 카드 안에서 새 문제가 시작되면 구분선
+          &:has(> .vp-badge.danger):not(:first-child) {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px dashed var(--vp-c-divider);
+            > .vp-badge {
+              top: calc(16px + 0.2em);
+            }
+          }
+          > .vp-badge:first-child {
+            position: absolute;
+            top: 0.2em;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  h2[id^='성과'] + ul {
+    padding-inline-start: 0;
+    list-style: none;
+    > li {
+      position: relative;
+      padding-left: 2rem;
+      &::before {
+        position: absolute;
+        top: 0.2em;
+        left: 0;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        color: var(--vp-c-accent);
+        font-size: 0.75rem;
+        font-weight: 800;
+        line-height: 1.3rem;
+        text-align: center;
+        background: var(--vp-c-accent-soft);
+        content: '✓';
+      }
+    }
+  }
 }

@@ -1,8 +1,10 @@
 ---
 type: projects
 depth: 2
-title: 카카오 karlo
-description: 카카오 karlo 프로모션
+title: 카카오 karlo 프로모션
+description: AI 를 이용한 이미지 생성 프로모션
+category: 프로모션
+stack: [Nuxt3, TypeScript, Pinia]
 order: 5
 ---
 
@@ -28,14 +30,14 @@ order: 5
 
 ## 문제 및 해결
 - **proxy설정**
-  - <Badge type="danger" text="문제" vertical="middle" />: 기존 nuxt2 에서는 axios 를 활용하여 proxy 설정 및 api 호출을 진행했으나, nuxt3 에서는 axios가 권장 방식이 아니었기 때문에 사용에 문제가 있었다.
-  - <Badge type="tip" text="해결" vertical="middle" />: 개발환경에서는 dev proxy 를 사용하여 api 를 호출하는데 이슈가 없었으나, prod 환경에서는 이가 작동하지 않았고, 당시 nuxt3 에 대한 문서 및 커뮤니티가 부족하여 해결에 소요시간이 오래 걸렸다. 결과적으로는 `nitro routeRules` 설정을 이용하여 해결하였다.
+  - <Badge type="danger" text="문제" vertical="middle" /> 기존 nuxt2 에서는 axios 를 활용하여 proxy 설정 및 api 호출을 진행했으나, nuxt3 에서는 axios가 권장 방식이 아니었기 때문에 사용에 문제가 있었다.
+  - <Badge type="tip" text="해결" vertical="middle" /> 개발환경에서는 dev proxy 를 사용하여 api 를 호출하는데 이슈가 없었으나, prod 환경에서는 이가 작동하지 않았고, 당시 nuxt3 에 대한 문서 및 커뮤니티가 부족하여 해결에 소요시간이 오래 걸렸다. 결과적으로는 `nitro routeRules` 설정을 이용하여 해결하였다.
 - **multipart/form-data 전송 이슈**
-  - <Badge type="danger" text="문제" vertical="middle" />: `routeRules` 설정으로 prod 환경에서도 모든 api 가 잘 작동했으나, `multipart/form-data`를 전송했을때 파일이 정상적으로 전송되지 않고 깨지는 이슈가 있었다.
-  - <Badge type="tip" text="해결" vertical="middle" />: 특정 확장자에 대해 `multipart/form-data`를 지원하지 않는 `nitro`의 초기 이슈인 것으로 파악했으며, `base64`등의 인코딩 방식을 통해 이를 우회하여 데이터를 전송하고 디코딩하는 방식을 사용하였다.
+  - <Badge type="danger" text="문제" vertical="middle" /> `routeRules` 설정으로 prod 환경에서도 모든 api 가 잘 작동했으나, `multipart/form-data`를 전송했을때 파일이 정상적으로 전송되지 않고 깨지는 이슈가 있었다.
+  - <Badge type="tip" text="해결" vertical="middle" /> 특정 확장자에 대해 `multipart/form-data`를 지원하지 않는 `nitro`의 초기 이슈인 것으로 파악했으며, `base64`등의 인코딩 방식을 통해 이를 우회하여 데이터를 전송하고 디코딩하는 방식을 사용하였다.
 - **다양한 cors 에러**
-  - <Badge type="danger" text="문제" vertical="middle" />: 이미지를 다루는 프로모션인 만큼, 이미지를 인코딩/디코딩 하는 과정, 이미지를 내려받아 저장하는 과정에서 다양한 cors 에러가 발생했다.
-  - <Badge type="tip" text="해결" vertical="middle" />: `proxy`, `routeRules`, 이미지 서버 호출 시 타임스탬프 활용 등 다양한 방법을 통해 cors 에러를 해결하였다. 
+  - <Badge type="danger" text="문제" vertical="middle" /> 이미지를 다루는 프로모션인 만큼, 이미지를 인코딩/디코딩 하는 과정, 이미지를 내려받아 저장하는 과정에서 다양한 cors 에러가 발생했다.
+  - <Badge type="tip" text="해결" vertical="middle" /> `proxy`, `routeRules`, 이미지 서버 호출 시 타임스탬프 활용 등 다양한 방법을 통해 cors 에러를 해결하였다. 
 
 ## 성과
 - 팀 내 nuxt3를 도입한 첫 프로젝트로, 기존 axios 를 사용한 api 호출을 vue3 자체 함수로 지원하는 방법과, 다양한 method 의 api 통신을 수행하는 방법을 정리 및 공유

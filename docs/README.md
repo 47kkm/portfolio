@@ -1,39 +1,42 @@
 ---
 removeFromSidebar: true
 sidebar: false
+pageClass: page_home
 ---
 
 <script setup>
-import { profile, techStack, relLink } from './.vuepress/data/main.js';
+import { projectList } from '@temp/projectList.js';
+import { profile, highlightList, careerList, techStack, educationList, relLink } from './.vuepress/data/main.js';
 </script>
 
-<h1 class="screen_out">
-  포트폴리오 메인
-</h1>
-
-<PanelMain
-  :title="profile.title"
-  :type="profile.type"
-  :infoList="profile.infoList"
+<MainHero
+  :profile="profile"
+  :highlightList="highlightList"
 />
 
-<PanelMain 
-  :title="techStack.title"
-  :type="techStack.type"
-  :infoList="techStack.infoList"
+<PanelCareer
+  :careerList="careerList"
 />
 
-<PanelMain 
-  :title="relLink.title"
-  :type="relLink.type"
-  :infoList="relLink.infoList"
+<PanelStack
+  :stackList="techStack"
 />
 
-<div class="area_link">
-  <TheLink
-    class="link_comm"
-    to="./projects/index.html"
-  >
-    프로젝트 목록 보기
-  </TheLink>
-</div>
+<section id="projects" class="panel_section">
+  <h2 class="tit_section">
+    프로젝트
+  </h2>
+  <PanelProject
+    :indexList="projectList"
+  />
+</section>
+
+<PanelEducation
+  title="학력 · 자격"
+  :educationList="educationList"
+/>
+
+<PanelContact
+  :email="profile.email"
+  :linkList="relLink"
+/>

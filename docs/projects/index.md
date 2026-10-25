@@ -7,7 +7,7 @@ sidebar: false
 ---
 
 <script setup>
-  import { projectList } from '../.vuepress/data/projectList.js';
+  import { projectList } from '@temp/projectList.js';
 </script>
 
 # 프로젝트 목록

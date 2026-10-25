@@ -1,32 +1,78 @@
 export const profile = {
-  title: '프로필',
-  type: 'default',
-  infoList: [
-    { tInfo: '이름', dInfo: '김경미' },
-    { tInfo: '메일', dInfo: 'kmkm5757@naver.com' },
+  name: '김경미',
+  role: 'Frontend Developer',
+  headline: {
+    lead: '사용자의 화면부터 팀의 개발 환경까지',
+    tail: '만드는 프론트엔드 개발자',
+  },
+  intro: [
+    'UI 개발자로 시작해 6년 넘게 카카오 계열 서비스와 프로모션 페이지를 개발했습니다. 팀의 첫 Nuxt3 도입과 마이그레이션을 맡았고, 보일러플레이트와 공통 모듈로 팀의 개발 환경을 다듬는 일에 힘썼습니다.',
+    '지금은 AI를 활용한 브라우저 확장 프로그램을 개발하고 있습니다.',
   ],
+  email: 'kmkm5757@naver.com',
+  github: 'https://github.com/47kkm',
 };
 
-export const techStack = {
-  title: '기술스택',
-  type: 'badge',
-  infoList: [
-    { dInfo: 'html' },
-    { dInfo: 'css' },
-    { dInfo: 'scss' },
-    { dInfo: 'javascript' },
-    { dInfo: 'vue' },
-    { dInfo: 'nuxt' },
-    { dInfo: 'vuepress' },
-    { dInfo: 'react' },
-  ],
-};
+export const highlightList = [
+  { value: '도메인 통합', label: 'ifkakao 연도별 페이지를 한 도메인으로', to: '/projects/project1.html' },
+  { value: '전사 확산', label: '함께 만든 보일러플레이트를 타 팀까지', to: '/projects/project12.html' },
+  { value: '모듈 5종', label: '프로모션 기능을 공통 모듈로 분리', to: '/projects/project8.html' },
+  { value: '누수 해결', label: 'GB 단위로 쌓이던 lottie 메모리 회수', to: '/projects/project8.html' },
+];
 
-export const relLink = {
-  title: '관련링크', 
-  type: 'link',
-  infoList: [
-    { tInfo: '현 문서 깃', dInfo: 'https://github.com/47kkm/portfolio' },
-    { tInfo: '보안 스터디 깃', dInfo: 'https://github.com/47kkm/security_practice' },
-  ],
-};
+export const techStack = [
+  { title: 'Language', list: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript'] },
+  { title: 'Framework', list: ['Vue', 'Nuxt', 'VuePress', 'React'] },
+  { title: 'Tools', list: ['Vuex', 'Pinia', 'WXT', 'Jest', 'MSW', 'Docker'] },
+];
+
+export const careerList = [
+  {
+    company: '㈜디케이테크인',
+    team: '계약직',
+    role: '프론트엔드',
+    period: '2026.06 ~ 2026.12',
+    duration: '진행 중 · 12월 종료 예정',
+    current: true,
+    taskList: [
+      '업무에 필요한 정보를 한곳에서 조회하는 AI 비서 브라우저 확장 프로그램 개발 (WXT · Vue · TypeScript)',
+      'AI API 연동 채팅 질의응답, 화면 데이터를 활용한 프롬프트 가공과 응답 렌더링 기능 구현',
+      'Java/Spring 기반 일부 조회 API 수정·쿼리 작성, BFF 수정, JSP 페이지 개발',
+    ],
+  },
+  {
+    company: '자영업',
+    team: '요식업 매장 운영',
+    period: '2025.07 ~ 2026.05',
+    duration: '11개월',
+  },
+  {
+    company: '㈜디케이테크인',
+    team: '기업서비스개발팀',
+    role: '프론트엔드',
+    period: '2019.04 ~ 2025.07',
+    duration: '6년 4개월',
+    taskList: [
+      'HTML·CSS·SCSS 마크업과 Vue·Nuxt 기반 프론트엔드 개발',
+      '카카오 및 계열사의 신규 서비스·프로모션 개발',
+      '카카오 및 계열사 기업 사이트, 브랜드 페이지 운영·유지보수',
+      '개발 효율을 높이기 위한 공통 모듈, 보일러플레이트 제작',
+    ],
+    historyList: [
+      { year: '2019', text: 'UI 개발자로 입사, 다음(Daum) 통합 검색 개편 프로젝트 참여' },
+      { year: '2020', text: '팀 Nuxt 도입과 함께 ifkakao 2020 프론트 메인 개발' },
+      { year: '이후', text: 'Nuxt3 도입·마이그레이션, 사내 보일러플레이트와 공통 모듈 제작' },
+    ],
+  },
+];
+
+export const educationList = [
+  { period: '2026.08', title: '정보보안기사', desc: '최종 합격 · 한국인터넷진흥원' },
+  { period: '2012.03 ~ 2016.08', title: '제주대학교 영어교육과', desc: '졸업' },
+];
+
+export const relLink = [
+  { text: '포트폴리오 저장소', href: 'https://github.com/47kkm/portfolio' },
+  { text: 'MOA 저장소', href: 'https://github.com/47kkm/MOA' },
+  { text: '보안 스터디 저장소', href: 'https://github.com/47kkm/security_practice' },
+];

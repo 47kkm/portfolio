@@ -2,7 +2,9 @@
 type: projects
 depth: 2
 title: 카카오엔터테인먼트 오디션
-description: 카카오엔터테인먼트 오디션
+description: 카카오엔터테인먼트 오디션 안내 및 지원 페이지
+category: 서비스
+stack: [Nuxt2, i18n, AWS]
 order: 3
 ---
 
@@ -31,10 +33,10 @@ order: 3
 
 ## 문제 및 해결
 - **마우스 포인터 커스텀과 접근성**
-  - <Badge type="danger" text="문제" vertical="middle" />: 고객사에서 인터랙션이나 효과를 중점적으로 여겨 마우스 포인터 커스텀을 원했으며, 해당 부분에 대하여 접근성을 크게 고려하지 못하였다.
-  - <Badge type="info" text="개선" vertical="middle" />: 추후 UI 적 요소와 접근성이 충돌할때 한 번 더 경중을 고려해야할 필요성을 느꼈다. 접근성을 고려한다면 해당 기능을 스펙아웃 하는 제안도 해볼 수 있을 것 같다.
+  - <Badge type="danger" text="문제" vertical="middle" /> 고객사에서 인터랙션이나 효과를 중점적으로 여겨 마우스 포인터 커스텀을 원했으며, 해당 부분에 대하여 접근성을 크게 고려하지 못하였다.
+  - <Badge type="info" text="개선" vertical="middle" /> 추후 UI 적 요소와 접근성이 충돌할때 한 번 더 경중을 고려해야할 필요성을 느꼈다. 접근성을 고려한다면 해당 기능을 스펙아웃 하는 제안도 해볼 수 있을 것 같다.
 - **일부 페이지 제외**
-  - <Badge type="danger" text="문제" vertical="middle" />: 오픈 전에 특정 페이지를 배포 및 노출하지 않고, 개발서버를 통해서만 확인하고 싶다는 요청이 있었다.
-  - <Badge type="tip" text="해결" vertical="middle" />: 타 브랜치를 이용하여 요청 페이지 코드를 관리하고, 기본 외 다른 개발서버를 이용하여 배포 및 확인할 수 있게 분리, 개발 및 배포 루트가 2개로 분리되어 관리할 수 있도록 작업하였다.
+  - <Badge type="danger" text="문제" vertical="middle" /> 오픈 전에 특정 페이지를 배포 및 노출하지 않고, 개발서버를 통해서만 확인하고 싶다는 요청이 있었다.
+  - <Badge type="tip" text="해결" vertical="middle" /> 타 브랜치를 이용하여 요청 페이지 코드를 관리하고, 기본 외 다른 개발서버를 이용하여 배포 및 확인할 수 있게 분리, 개발 및 배포 루트가 2개로 분리되어 관리할 수 있도록 작업하였다.
 
 ## 성과

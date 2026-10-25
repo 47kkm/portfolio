@@ -2,7 +2,9 @@
 type: projects
 depth: 2
 title: 팝업 레이어 모듈
-description: nuxt/kit 를 이용한 팝업 레이어 모듈 제작
+description: nuxt/kit를 이용한 팝업 레이어 모듈 제작
+category: 사내 도구
+stack: [Nuxt3, nuxt/kit]
 order: 11
 ---
 

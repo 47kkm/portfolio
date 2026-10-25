@@ -2,7 +2,9 @@
 type: projects
 depth: 2
 title: 카카오모빌리티 디벨로퍼스
-description: 카카오모빌리티 디벨로퍼스
+description: 카카오모빌리티 기술 및 제품 페이지
+category: 서비스
+stack: [Nuxt2, VuePress, reCAPTCHA]
 order: 4
 ---
 
@@ -36,12 +38,12 @@ order: 4
 
 ## 문제 및 해결
 - **리소스 관리 문제**
-  - <Badge type="danger" text="문제" vertical="middle" />: 프론트 작업 영역이 2개로 나뉘어 있어 각기 개발을 진행하였고, 서로의 개발 진행사항을 잘 파악하지 못한 문제가 발생하였다.
-  - <Badge type="tip" text="고려" vertical="middle" />: 추후 개발 진행 상황을 주도적으로 확인하였고, 리소스가 모자란 부분에서 지원 수행하여 일정 이슈 없이 개발 진행되도록 하였다.
+  - <Badge type="danger" text="문제" vertical="middle" /> 프론트 작업 영역이 2개로 나뉘어 있어 각기 개발을 진행하였고, 서로의 개발 진행사항을 잘 파악하지 못한 문제가 발생하였다.
+  - <Badge type="tip" text="고려" vertical="middle" /> 추후 개발 진행 상황을 주도적으로 확인하였고, 리소스가 모자란 부분에서 지원 수행하여 일정 이슈 없이 개발 진행되도록 하였다.
 - **프레임워크에 대한 고민**
-  - <Badge type="danger" text="문제" vertical="middle" />: 처음 문서 영역은 이전 프로젝트에서 진행한 바가 있었던 `hugo`를 고려하였으나, `hugo`프레임워크에 대해 알지 못하는 부분이 많았으며 러닝커브가 크다는 문제 발생하였다.
-  - <Badge type="tip" text="해결" vertical="middle" />: 협업자의 노력으로 고객사에 제안하여 `nuxt`와 호환성도 좋으며 `vue`를 기반으로 한 `vuepress`를 최종적으로 사용하게 되었다.
-  - <Badge type="info" text="개선" vertical="middle" />: 프레임워크를 변경한다는 것은 리스크가 있을 수도 있는 선택이었으나, 결과적으로는 개발 측면이나 유지보수 측면에서도 좋은 선택이었다. 면밀히 검토하여 적절한 선택을 하고, 해당 선택을 고객사에 제안할 수 있어야 한다.
+  - <Badge type="danger" text="문제" vertical="middle" /> 처음 문서 영역은 이전 프로젝트에서 진행한 바가 있었던 `hugo`를 고려하였으나, `hugo`프레임워크에 대해 알지 못하는 부분이 많았으며 러닝커브가 크다는 문제 발생하였다.
+  - <Badge type="tip" text="해결" vertical="middle" /> 협업자의 노력으로 고객사에 제안하여 `nuxt`와 호환성도 좋으며 `vue`를 기반으로 한 `vuepress`를 최종적으로 사용하게 되었다.
+  - <Badge type="info" text="개선" vertical="middle" /> 프레임워크를 변경한다는 것은 리스크가 있을 수도 있는 선택이었으나, 결과적으로는 개발 측면이나 유지보수 측면에서도 좋은 선택이었다. 면밀히 검토하여 적절한 선택을 하고, 해당 선택을 고객사에 제안할 수 있어야 한다.
 
 ## 성과
 - 부족한 리소스 상황에 대해 빠른 개발 처리 및 협업자 지원을 통해 일정 관리에 기여

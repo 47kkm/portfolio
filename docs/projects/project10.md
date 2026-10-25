@@ -2,7 +2,9 @@
 type: projects
 depth: 2
 title: Useragent 모듈
-description: Useragent 모듈 개발
+description: 바닐라 스크립트를 이용한 Useragent 모듈 개발
+category: 사내 도구
+stack: [JavaScript, nuxtjs/device]
 order: 10
 ---
 

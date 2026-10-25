@@ -3,6 +3,8 @@ type: projects
 depth: 2
 title: Nuxt2 컴포넌트
 description: 사내 Nuxt2 컴포넌트 가이드 페이지 제작
+category: 사내 도구
+stack: [Nuxt2, MDX]
 order: 9
 ---
 

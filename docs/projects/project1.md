@@ -2,7 +2,9 @@
 type: projects
 depth: 2
 title: ifkakao
-description: ifkakao
+description: ifkakao 개발자 컨퍼런스 페이지
+category: 서비스
+stack: [Nuxt2, Nuxt3, Jest]
 order: 1
 ---
 
@@ -29,8 +31,8 @@ order: 1
 
 ## 문제 및 해결
 - **CSR 방식 구현으로 인한 검색최적화 이슈**
-  - <Badge type="danger" text="문제" vertical="middle" />: 초기 설계에서 검색최적화를 고려하지 못하고, 다량의 트래픽만 고려하여 CSR 방식을 선택하였고, 결과적으로 페이지별 메타, 페이스북 공유하기 등에서 개별 메타 정보 설정이 불가능하게 되었다.
-  - <Badge type="tip" text="해결" vertical="middle" />: 서버에서 게이트웨이 서비스를 제공해주어, 해당 서비스로 페이지별 메타정보를 전송, 공유 시 개별 페이지 정보를 노출할 수 있게 하였다.
+  - <Badge type="danger" text="문제" vertical="middle" /> 초기 설계에서 검색최적화를 고려하지 못하고, 다량의 트래픽만 고려하여 CSR 방식을 선택하였고, 결과적으로 페이지별 메타, 페이스북 공유하기 등에서 개별 메타 정보 설정이 불가능하게 되었다.
+  - <Badge type="tip" text="해결" vertical="middle" /> 서버에서 게이트웨이 서비스를 제공해주어, 해당 서비스로 페이지별 메타정보를 전송, 공유 시 개별 페이지 정보를 노출할 수 있게 하였다.
 
 ## 성과
 - 웹뷰에 대한 파악과 문서정리를 통해 추후 인앱에서만 제공되는 프로모션 등의 개발 효율성을 높임
