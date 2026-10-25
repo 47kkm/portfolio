@@ -28,9 +28,10 @@ const categoryClass = {
   font-weight: 700;
   color: var(--badge-c-note-text);
   background: var(--badge-c-note-bg);
+  // 메인 컬러(파랑)와 겹치지 않도록 녹색 사용
   &.type_service {
-    color: var(--badge-c-info-text);
-    background: var(--badge-c-info-bg);
+    color: var(--badge-c-tip-text);
+    background: var(--badge-c-tip-bg);
   }
   &.type_promotion {
     color: var(--badge-c-important-text);
@@ -41,8 +42,8 @@ const categoryClass = {
     background: var(--badge-c-warning-bg);
   }
   &.type_internal {
-    color: var(--badge-c-tip-text);
-    background: var(--badge-c-tip-bg);
+    color: var(--badge-c-note-text);
+    background: var(--badge-c-note-bg);
   }
 }
 </style>

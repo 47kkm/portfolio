@@ -1,3 +1,18 @@
+// 메인 컬러 (코발트 블루)
+:root {
+  --vp-c-accent: #1d4ed8;
+  --vp-c-accent-bg: #2563eb;
+  --vp-c-accent-hover: #3b82f6;
+  --vp-c-accent-soft: rgb(37 99 235 / 12%);
+}
+
+[data-theme='dark'] {
+  --vp-c-accent: #60a5fa;
+  --vp-c-accent-bg: #3b82f6;
+  --vp-c-accent-hover: #2563eb;
+  --vp-c-accent-soft: rgb(59 130 246 / 16%);
+}
+
 ul {
   li {
     + li {
