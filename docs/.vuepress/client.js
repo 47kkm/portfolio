@@ -6,7 +6,7 @@ import PanelCareer from './components/PanelCareer.vue';
 import PanelStack from './components/PanelStack.vue';
 import PanelProject from './components/PanelProject.vue';
 import PanelEducation from './components/PanelEducation.vue';
-import PanelContact from './components/PanelContact.vue';
+import PanelLink from './components/PanelLink.vue';
 
 export default defineClientConfig({
   enhance({ app }) {
@@ -16,7 +16,7 @@ export default defineClientConfig({
     app.component('PanelStack', PanelStack);
     app.component('PanelProject', PanelProject);
     app.component('PanelEducation', PanelEducation);
-    app.component('PanelContact', PanelContact);
+    app.component('PanelLink', PanelLink);
   },
   layouts: {
     Layout,

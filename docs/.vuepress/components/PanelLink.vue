@@ -1,17 +1,11 @@
 <template>
-  <section class="panel_contact">
+  <section class="panel_link">
     <h2 class="tit_section">
-      연락처
+      GitHub
     </h2>
-    <p class="desc_contact">
-      프로젝트나 협업에 대해 궁금한 점이 있다면 메일로 연락 주세요.
+    <p class="desc_link">
+      코드와 학습 기록은 아래 저장소에서 확인하실 수 있습니다.
     </p>
-    <a
-      class="link_mail"
-      :href="`mailto:${email}`"
-    >
-      {{ email }}
-    </a>
     <ul class="list_link">
       <li
         v-for="{ text, href } in linkList"
@@ -32,10 +26,6 @@
 
 <script setup>
 const props = defineProps({
-  email: {
-    type: String,
-    required: true,
-  },
   linkList: {
     type: Array,
     default() {
@@ -46,30 +36,17 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-.panel_contact {
+.panel_link {
   margin-top: 96px;
   padding: 40px;
   border-radius: 20px;
   text-align: center;
   background: var(--vp-c-bg-alt);
 }
-.desc_contact {
+.desc_link {
   margin: 12px 0 0;
   color: var(--vp-c-text-mute);
   word-break: keep-all;
-}
-.link_mail {
-  display: inline-block;
-  margin-top: 16px;
-  font-size: clamp(1.25rem, 4vw, 1.75rem);
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  color: var(--vp-c-accent);
-  word-break: break-all;
-  text-decoration: none !important;
-  &:hover {
-    text-decoration: underline !important;
-  }
 }
 .list_link {
   display: flex;
@@ -87,7 +64,7 @@ const props = defineProps({
 }
 
 @media (max-width: 719px) {
-  .panel_contact {
+  .panel_link {
     margin-top: 72px;
     padding: 32px 20px;
   }

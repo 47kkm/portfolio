@@ -27,6 +27,11 @@ export default defineUserConfig({
     // hostname 을 지정하면 테마의 seo(공유 카드 메타)·sitemap 플러그인이 켜짐
     hostname: 'https://47kkm.github.io',
     themePlugins: {
+      // 기여자·변경 기록을 쓰지 않으므로 커밋 작성자 메일·기록이 페이지 데이터에 담기지 않도록 끔
+      git: {
+        contributors: false,
+        changelog: false,
+      },
       seo: {
         fallBackImage: 'https://47kkm.github.io/portfolio/og-image.png',
         // 본문 첫 문장 대신 frontmatter description(없으면 사이트 설명)을 사용

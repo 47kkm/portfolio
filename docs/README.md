@@ -36,7 +36,6 @@ import { profile, highlightList, careerList, techStack, educationList, relLink }
   :educationList="educationList"
 />
 
-<PanelContact
-  :email="profile.email"
+<PanelLink
   :linkList="relLink"
 />
