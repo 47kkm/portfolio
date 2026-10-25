@@ -1,8 +1,8 @@
 ---
 type: projects
 depth: 1
-title: Project
-description: project index
+title: 프로젝트
+description: 김경미가 참여한 서비스·프로모션·사내 도구·개인 프로젝트 목록
 sidebar: false
 ---
 

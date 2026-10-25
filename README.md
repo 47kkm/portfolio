@@ -39,6 +39,7 @@ docs/
     ├── layouts/            기본 테마 레이아웃 확장
     ├── data/main.js        소개, 경력, 기술 스택 등 메인 데이터
     ├── plugins/            사이드바, 프로젝트 목록 생성
+    ├── public/             파비콘, 공유 이미지(og-image.png)
     └── styles/index.scss   공통 스타일
 ```
 
