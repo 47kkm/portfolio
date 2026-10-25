@@ -18,7 +18,7 @@ const restructureMatter = (matter) => {
   }
 
   return depth === 1 ? {
-    prefiex: `/${type}/`,
+    prefix: `/${type}/`,
     ...newOne,
   } : newOne;
 }

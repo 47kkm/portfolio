@@ -16,7 +16,3 @@ export const groupByObjectKey = (list, key) => {
     return acc;
   }, {});
 }
-
-export {
-  groupByObjectKey,
-}

@@ -8,7 +8,7 @@
     <ul  class="list_info">
       <li
         v-for="{ tInfo, dInfo } in infoList"
-        :key="title"
+        :key="dInfo"
       >
         <!-- default type -->
         <template 
