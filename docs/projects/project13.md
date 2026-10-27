@@ -4,7 +4,7 @@ depth: 2
 title: MOA
 description: 매출·비용·예산을 한곳에 모아 보는 매장 관리 서비스
 category: 개인 프로젝트
-stack: [Java, Spring Boot, MySQL, Nuxt3]
+stack: [Java, Spring Boot, MySQL, React]
 period: 2026.10 ~ 진행 중
 order: 13
 ---
@@ -20,8 +20,8 @@ order: 13
 
 ## 기술 스택
 - BACK: Java 17, Spring Boot 3, Spring Modulith, Spring Data JPA, MySQL 8
-- FRONT: Nuxt3, TypeScript, Nuxt UI, ECharts
-- TEST: JUnit 5, Testcontainers, Vitest
+- FRONT: React, Vite, TypeScript, Tailwind CSS, ECharts
+- TEST: JUnit 5, Testcontainers, Vitest, React Testing Library
 
 ## 설계 방향
 - DDD 기반 모듈러 모놀리스
