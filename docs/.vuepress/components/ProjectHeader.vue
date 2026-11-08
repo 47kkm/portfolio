@@ -47,6 +47,8 @@ const isProjectPage = computed(() => {
 
 <style lang="scss" scoped>
 .project_header {
+  // 테마가 [vp-content]의 padding-top을 0으로 두고 첫 h1에만 위 여백을 줘서, 헤더가 h1 앞에 오면 여백이 사라짐
+  padding-top: 2rem;
   margin-bottom: -8px;
 }
 .link_back {
